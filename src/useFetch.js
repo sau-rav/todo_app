@@ -20,8 +20,10 @@ const useFetch = (url, date) => {
 					var filtered_data = data.filter((entry) => { return entry.date === date })
 					setData(filtered_data)
 				} else {
-					data.sort((e1, e2) => 
+					if(data.length > 1) {
+						data.sort((e1, e2) => 
 						e1.date.split('-').reverse().join('-') > e2.date.split('-').reverse().join('-'))
+					}
 					setData(data)
 				}
 				setIsPending(false)
