@@ -11,7 +11,7 @@ const Home = () => {
 		return [year, month, day].join('-')
 	}
 
-	const { data: todos, isPending, error } = useFetch('http://localhost:3001/todos', date)
+	const { data: todos, isPending, error } = useFetch('https://json-server-todo-238.herokuapp.com/todos', date)
 
 	return (
 		<div className="home">

@@ -4,11 +4,11 @@ import useFetch from './useFetch'
 
 const TodoDetails = () => {
 	const { id } = useParams()
-	const { data: todo, isPending, error } = useFetch('http://localhost:3001/todos/' + id, '')
+	const { data: todo, isPending, error } = useFetch('https://json-server-todo-238.herokuapp.com/todos' + id, '')
 	const history = useHistory()
 
 	const handleDelete = (id) => {
-		fetch('http://localhost:3001/todos/' + id, {
+		fetch('https://json-server-todo-238.herokuapp.com/todos' + id, {
 				method: 'DELETE',
 			}).then(() => {
 				history.push('/')

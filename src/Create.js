@@ -26,7 +26,7 @@ const Create = () => {
 		const blog = { title, body, date };
 		setIsPending(true);
 
-		fetch('http://localhost:3001/todos', {
+		fetch('https://json-server-todo-238.herokuapp.com/todos', {
 			method: 'POST',
 			headers: { "Content-type": "application/json" },
 			body: JSON.stringify(blog)
