@@ -8,8 +8,8 @@ const TodoList = ({ todos }) => {
 				<div className="todo-preview" key={todo.id}>
 					<Link to={ `/todos/${todo.id}` }>
 						<h2>{ todo.title }</h2>
+					    <p>Date : { todo.date.split('-').reverse().join('-') }</p>
 					</Link>
-					<p>Date : { todo.date.split('-').reverse().join('-') }</p>
 				</div>
 			))}
 		</div>

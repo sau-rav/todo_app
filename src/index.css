@@ -76,6 +76,9 @@
   position: relative;
   left: 50%;
 }
+.todo-details button:hover {
+    background: #1184c7;
+}
 
 /* create new todo form */
 .create {
