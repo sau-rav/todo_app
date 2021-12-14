@@ -74,7 +74,8 @@
   border-radius: 8px;
   cursor: pointer;
   position: relative;
-  left: 50%;
+  display: block;
+  margin: auto;
 }
 .todo-details button:hover {
     background: #1184c7;
